@@ -1,7 +1,7 @@
 **1. Clone wallet sources**
 
 ```
-git clone --recurse-submodules https://github.com/jerrimus/Pennykoin
+git clone --recurse-submodules https://github.com/jerrimus/QTPenny
 ```
 
 
