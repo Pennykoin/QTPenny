@@ -1,7 +1,11 @@
 **1. Clone wallet sources**
 
 ```
-git clone --recurse-submodules https://github.com/jerrimus/QTPenny
+git clone https://github.com/jerrimus/QTPenny 
+ 
+ cd QTPenny 
+  
+ git submodule add -b 3.4 https://github.com/fukuchi/libqrencode libqrencode && git submodule add https://github.com/pennykoin/Pennykoin cryptonote
 ```
 
 

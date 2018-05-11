@@ -1,7 +1,7 @@
 [submodule "cryptonote"]
 	path = cryptonote
- 	url = https://github.com/pennykoin/Pennykoin.git
+	url = https://github.com/pennykoin/Pennykoin
 [submodule "libqrencode"]
 	path = libqrencode
-	url = https://github.com/fukuchi/libqrencode.git
+	url = https://github.com/fukuchi/libqrencode
 	branch = 3.4
