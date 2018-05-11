@@ -2,4 +2,4 @@
 set(CN_PROJECT_NAME "pennykoin")
 set(CN_CURRENCY_DISPLAY_NAME "Pennykoin")
 set(CN_CURRENCY_TICKER "PK")
-set(CN_VERSION 1.1.4)
+set(CN_VERSION 1.0.0)

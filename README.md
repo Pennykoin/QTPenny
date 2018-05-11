@@ -1,23 +1,11 @@
 **1. Clone wallet sources**
 
 ```
-git clone https://github.com/seredat/karbowanecwallet.git
+git clone --recurse-submodules https://github.com/jerrimus/Pennykoin
 ```
 
-**2. Set symbolic link to coin sources at the same level as `src`. For example:**
 
-```
-ln -s ../karbowanec cryptonote
-```
-
-Alternative way is to create git submodule:
-
-```
-git submodule add https://github.com/seredat/karbowanec.git cryptonote
-```
-
-**3. Build**
-
+**2. build**
 ```
 mkdir build && cd build && cmake .. && make
 ```

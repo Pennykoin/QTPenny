@@ -23,11 +23,11 @@ using namespace boost;
 using namespace WalletGui;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("karbowanec:");
+const QString BITCOIN_IPC_PREFIX("pennypay:");
 
 static QString ipcServerName()
 {
-    QString name("Karbowanec");
+    QString name("Pennykoin");
 
     return name;
 }

@@ -236,7 +236,7 @@
           </size>
          </property>
          <property name="text">
-          <string> krb</string>
+          <string> pk</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
