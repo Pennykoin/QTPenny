@@ -260,8 +260,8 @@ qt5_use_modules(${PROJECT_NAME} Widgets Gui Network)
 
 set(CPACK_PACKAGE_NAME ${CN_PROJECT_NAME})
 set(CPACK_PACKAGE_VERSION ${CN_VERSION})
-set(CPACK_PACKAGE_VENDOR "BXC-project")
-set(CPACK_PACKAGE_CONTACT "http://bitcedi.org")
+set(CPACK_PACKAGE_VENDOR "Pennykoin-dev")
+set(CPACK_PACKAGE_CONTACT "http://pennykoin.com")
 set(CPACK_STRIP_FILES ON)
 if (APPLE)
     set(CPACK_GENERATOR DragNDrop)
@@ -271,33 +271,18 @@ elseif (UNIX)
     find_program(RPMBUILD rpmbuild)
 
     install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
-    install(FILES src/bitcediwallet.desktop DESTINATION share/applications)
+    install(FILES src/pkwallet.desktop DESTINATION share/applications)
     install(FILES src/images/cryptonote.png DESTINATION share/pixmaps RENAME bitcedi.png)
-    install(FILES copyright DESTINATION share/doc/bitcediwallet)
+    install(FILES copyright DESTINATION share/doc/pkwallet)
 
     if (NOT RPMBUILD)
         set(CPACK_GENERATOR DEB)
         set(CPACK_DEBIAN_PACKAGE_NAME ${CPACK_PACKAGE_NAME})
         set(CPACK_SYSTEM_NAME amd64)
-        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <bitcedi@gmail.com>")
+        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <pennykoin@fam-base.net>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Bitcedi BXC wallet
- Bitcedi is a decentrilized privacy protected peer-to-peer
- cryptocurrency and untraceable encrypted messaging system. Bitcedi is
- open-source; its design is public, nobody owns or controls Bitcedi and
- everyone can take part.
- .
- Features of the Bitcedi wallet listed bellow:
- * Classic Bitcoin alike appearance in CryptoNote based cryptocurrency,
-   made with QT and open-source.
- * Instant anonymous BXC transfers and transfers notifications
- * Instant untraceable encrypted messages transfers and notifications
- * Safe and secure, full Bitcedi network node in wallet, fast network
-   syncronization.
- * Wallet encryption
- * Fast and hardware optimized
- * Open and easy. Private keys can be exported into other clients.")
+        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Pennykoin is a private cryptocurrency for everyone")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}.${CPACK_SYSTEM_NAME}")
     else()
         set(CPACK_GENERATOR RPM)
@@ -306,23 +291,8 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_LICENSE "MIT")
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
-        set(CPACK_RPM_PACKAGE_SUMMARY "Bitcedi wallet")
-        set(CPACK_RPM_PACKAGE_DESCRIPTION "Open-source Bitcedi GUI wallet
- Bitcedi is a decentrilized privacy protected peer-to-peer
- cryptocurrency and untraceable encrypted messaging system. Bitcedi is
- open-source; its design is public, nobody owns or controls Bitcedi and
- everyone can take part.
-
- Features of the Bitcedi wallet listed bellow:
- *Classic Bitcoin alike appearance in CryptoNote based cryptocurrency,
-    made with QT and open-source.
- *Instant anonymous Bitcedi transfers and transfers notifications
- *Instant untraceable encrypted messages transfers and notifications
- *Safe and secure, full Bitcedi network node in wallet, fast network
-    syncronization.
- *Wallet encryption
- *Fast and hardware optimized
- *Open and easy. Private keys can be exported into other clients.")
+        set(CPACK_RPM_PACKAGE_SUMMARY "Pennykoin wallet")
+        set(CPACK_RPM_PACKAGE_DESCRIPTION "Pennykoin is a private cryptocurrency for everyone")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}.${CPACK_SYSTEM_NAME}")
     endif ()
 elseif (WIN32)
