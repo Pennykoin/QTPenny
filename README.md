@@ -5,7 +5,7 @@ git clone https://github.com/jerrimus/QTPenny
  
  cd QTPenny 
   
- git submodule add -b 3.4 https://github.com/fukuchi/libqrencode libqrencode && git submodule add https://github.com/pennykoin/pennykoin cryptonote
+ git submodule add -b 3.4 https://github.com/pennykoin/libqrencode libqrencode && git submodule add https://github.com/pennykoin/pennykoin cryptonote
 ```
 
 
