@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=QTPenny
+Comment=Pennykoin wallet
+Exec=QTPenny
+Terminal=false
+Type=Application
+Icon=royalties
+MimeType=x-scheme-handler/*.wallet;
+Categories=Office;Finance;
