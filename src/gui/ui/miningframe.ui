@@ -37,6 +37,17 @@
        <property name="editable">
         <bool>false</bool>
        </property>
+       <property name="currentText">
+        <string>pool.pennykoin.com:3333</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>pool.pennykoin.com:3333</string>
+        </property>
+       </item>
       </widget>
      </item>
      <item row="1" column="0">

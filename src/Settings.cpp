@@ -58,7 +58,7 @@ void Settings::load() {
 
   QStringList defaultPoolList;
   //defaultPoolList << "xdn.miner.center:4555" << "duckpool.mooo.com:2222" << "xdn.poolto.be:11010";
-  defaultPoolList << "0.0.0.0:4333";
+  defaultPoolList << "pool.pennykoin.com:3333";
   if (!m_settings.contains(OPTION_MINING_POOLS)) {
     setMiningPoolList(QStringList() << defaultPoolList);
   } else {
@@ -194,7 +194,7 @@ bool Settings::isStartOnLoginEnabled() const {
 
 #ifdef Q_OS_WIN
 bool Settings::isMinimizeToTrayEnabled() const {
-  return m_settings.contains("minimizeToTray") ? m_settings.value("minimizeToTray").toBool() : false;
+  return m_settings.contains("minimizeToTray") ? m_settings.value("minimizeToTray").toBool() : true;
 }
 
 bool Settings::isCloseToTrayEnabled() const {
