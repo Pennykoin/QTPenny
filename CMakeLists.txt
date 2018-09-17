@@ -10,7 +10,7 @@ WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 OUTPUT_VARIABLE GIT_REVISION)
 
 set(CRYPTONOTE_LIB cryptonote)
-set (CMAKE_PREFIX_PATH "/Users/jerryhowell/Qt5.8.0/5.8/")
+set (CMAKE_PREFIX_PATH "/Users/travis/Qt5.8.0/5.8/")
 
 include_directories(${CMAKE_BINARY_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}
