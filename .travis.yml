@@ -17,7 +17,9 @@
          - libminiupnpc-dev 
          - libreadline6-dev 
          - libldns-dev
-
+LDFLAGS: -L/usr/local/opt/qt@5.5/lib
+CPPFLAGS: -I/usr/local/opt/qt@5.5/include
+PKG_CONFIG_PATH: /usr/local/opt/qt@5.5/lib/pkgconfig
   before_install: 
             - chmod +x build.sh
             - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew upgrade autoconf qt5 automake berkeley-db4 libtool miniupnpc openssl protobuf; fi
