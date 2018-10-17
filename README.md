@@ -1,3 +1,8 @@
+This repo being phased out, future GUI wallet releases will be in PKGui repo.
+
+
+
+
 **1. Clone wallet sources**
 
 ```
